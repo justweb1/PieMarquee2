@@ -15,6 +15,11 @@ cd PieMarquee2
 chmod 755 ./install.sh
 sudo ./install.sh
 ```
+You may need to fix framebuffer resolution.<br/>
+Add following line in autostart.sh file (/opt/retropie/configs/all/autostart.sh)
+
+```fbset -fb /dev/fb0 -g 1280 720 1280 720 32```
+
 
 ## Files for your marquee
 
@@ -27,7 +32,4 @@ sudo ./install.sh
   * publisher image for publisher "publisher.png" in "/home/pi/PieMarquee2/marquee/publisher" folder (*optional, defined in gamelist_short.xml*)
   
 
-You may need to change framebuffer resolution.<br/>
-Add following line in autostart.sh file (/opt/retropie/configs/all/autostart.sh)
 
-```fbset -fb /dev/fb0 -g 1280 720 1280 720 32```
